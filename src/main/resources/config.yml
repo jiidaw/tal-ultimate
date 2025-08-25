@@ -1,0 +1,33 @@
+warps:
+  plaza: { world: world, x: 0.0, y: 64.0, z: 0.0, yaw: 0.0, pitch: 0.0 }
+  arena: { world: world, x: 100.0, y: 64.0, z: 100.0, yaw: 0.0, pitch: 0.0 }
+
+economy:
+  ore-prices:
+    DIAMOND: 200
+    IRON_INGOT: 50
+    GOLD_INGOT: 80
+  crop-prices:
+    WHEAT: 10
+    CARROT: 12
+    POTATO: 12
+
+gacha:
+  item:
+    normal-price: 1000
+    premium-price: 1500
+    pool:
+      - { type: "LOSE", weight: 10 }
+      - { type: "ORE", material: "DIAMOND", amount: 7, weight: 4 }
+      - { type: "SEED", material: "WHEAT_SEEDS", amount: 7, weight: 6 }
+  title:
+    price: 5000
+    weights: { COMMON: 80, UNIQUE: 20 }
+
+titles:
+  list:
+    newbie:
+      display: "뉴비"
+      grade: "COMMON"
+      color: "§e"
+      obtained-by: { type: "JOIN" }

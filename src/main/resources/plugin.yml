@@ -1,0 +1,12 @@
+name: TALUltimate
+main: com.talultimate.TalUltimatePlugin
+version: ${version}
+api-version: "1.21"
+commands:
+  menu: {}
+  gachaitem: {}
+  gachatitle: {}
+  settitle: {}
+  shopadmin: {}
+  광장: {}
+  결투장: {}
