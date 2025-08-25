@@ -15,7 +15,7 @@ public final class TalUltimatePlugin extends JavaPlugin {
         saveDefaultConfig();
 
         WARPS = new WarpManager(this);
-        GACHA = new GachaManager(this);
+        GACHA = new GachaManager(this);   // ← plugin 주입
         TITLES = new TitleManager(this);
         ECON  = new EconomyManager(this);
 
@@ -34,5 +34,7 @@ public final class TalUltimatePlugin extends JavaPlugin {
     }
 
     @Override
-    public void onDisable() { getLogger().info("TALUltimate disabled."); }
+    public void onDisable() {
+        getLogger().info("TALUltimate disabled.");
+    }
 }
