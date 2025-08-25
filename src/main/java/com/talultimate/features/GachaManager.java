@@ -1,3 +1,10 @@
+public class GachaManager {
+    private final TalUltimatePlugin plugin;
+
+    public GachaManager(TalUltimatePlugin plugin) {
+        this.plugin = plugin;
+    }
+}
 package com.talultimate.features;
 
 import com.talultimate.TalUltimatePlugin;
