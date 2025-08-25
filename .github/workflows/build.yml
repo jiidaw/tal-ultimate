@@ -16,16 +16,17 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      # ✅ Gradle 설치 + 캐시
+      # Gradle 설치 + 캐시
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: 8.9
 
-      # ✅ gradle 명령으로 빌드
+      # gradle 명령으로 빌드 (wrapper 불필요)
       - name: Build
         run: gradle build
 
+      # 산출물 업로드
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
